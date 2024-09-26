@@ -1,6 +1,8 @@
-function getColorFromPairNumber(MajorColorNames, MinorColorNames, pairNumber){
-	let minorSize = MajorColorNames.length;
-	let majorSize = MinorColorNames.length;
+import { ColorConstants } from '../app/constants.js';
+
+function getColorFromPairNumber(pairNumber){
+	let minorSize = ColorConstants.MAJOR_COLOR_NAMES.length;
+	let majorSize = ColorConstants.MINOR_COLOR_NAMES.length;
 	
 	if (pairNumber < 1 || pairNumber > minorSize * majorSize)
  	{
@@ -10,7 +12,7 @@ function getColorFromPairNumber(MajorColorNames, MinorColorNames, pairNumber){
     let majorIndex = parseInt (zeroBasedPairNumber / minorSize);
     let minorIndex = parseInt(zeroBasedPairNumber % minorSize);
 	let  pair = new ColorPair();
-	pair.majorColor = MajorColorNames[majorIndex];
-	pair.minorColor = MinorColorNames[minorIndex];
+	pair.majorColor = ColorConstants.MAJOR_COLOR_NAMES[majorIndex];
+	pair.minorColor =  ColorConstants.MINOR_COLOR_NAMES[minorIndex];
 	return pair;
 }
