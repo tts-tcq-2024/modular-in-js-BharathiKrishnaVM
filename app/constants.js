@@ -1,4 +1,4 @@
-export class colorConstants {
+export class ColorConstants {
 public static readonly MAJOR_COLOR_NAMES = [
     "WHITE", "RED", "BLACK", "YELLOW", "VIOLET"
 ];
