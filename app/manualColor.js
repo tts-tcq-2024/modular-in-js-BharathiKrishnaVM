@@ -1,7 +1,7 @@
 import { getColorFromPairNumber } from "./utility";
 import {MAJOR_COLOR_NAMES, MINOR_COLOR_NAMES} from '../app/constants'
 
-function manualColorCombination() {
+function generateManualColors() {
     const minorSize = MAJOR_COLOR_NAMES.length;
     const majorSize = MINOR_COLOR_NAMES.length;
     let manual = '';
@@ -14,4 +14,4 @@ function manualColorCombination() {
     return manual;
 }
 
-module.exports = manualColorCombination;
+module.exports = generateManualColors;
