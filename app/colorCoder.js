@@ -1,6 +1,5 @@
-import { getColorFromPairNumber } from "./Utility";
-import { getPairNumberFromColor } from "./Utility";
-import { manualColorCombination } from "./manualColor";
+const { getColorFromPairNumber, getPairNumberFromColor } = require('../app/Utility');
+const buildColorCode = require('../app/manualColor');
 
 function test() {
     //Color code test cases
