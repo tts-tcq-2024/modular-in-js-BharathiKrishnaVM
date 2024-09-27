@@ -27,14 +27,9 @@ function test() {
         console.assert(pairNumber === expectedPairNumber, `Expected Pair Number: ${expectedPairNumber}, but existing is: ${pairNumber}`);
     });
 }
-//Manual color combinations
-function printColorCodingManual() {
-    console.log("Color Coding Manual:\n" + manualColorCombination());
-}
 
 function main() {
     runTestCases();
-    printColorCodingManual();
 }
 
 main()
