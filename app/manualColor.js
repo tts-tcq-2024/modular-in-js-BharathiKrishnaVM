@@ -1,4 +1,5 @@
-import { MAJOR_COLOR_NAMES, MINOR_COLOR_NAMES, getColorFromPairNumber } from "./Utility";
+import { getColorFromPairNumber } from "./utility";
+import {MAJOR_COLOR_NAMES, MINOR_COLOR_NAMES} from '../app/constants'
 
 function manualColorCombination() {
     const minorSize = MAJOR_COLOR_NAMES.length;
