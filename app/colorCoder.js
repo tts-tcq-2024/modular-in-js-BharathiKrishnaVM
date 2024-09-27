@@ -1,4 +1,4 @@
-const { getColorFromPairNumber, getPairNumberFromColor } = require('../app/Utility');
+const { getColorFromPairNumber, getPairNumberFromColor } = require('../app/utility');
 const buildColorCode = require('../app/manualColor');
 
 function test() {
